@@ -1,0 +1,53 @@
+.HeroSection {
+  position: relative;
+
+  /* background: ; */
+}
+.HeroSection .img-div {
+  overflow: hidden;
+}
+.HeroSection .img-div img {
+  width: 100%;
+  /* display: none; */
+  min-width: 500px;
+}
+
+.text-div {
+  background-color: rgba(255, 255, 255, 0.57);
+  color: rgb(55, 55, 55);
+  width: 100%;
+  max-width: 700px;
+
+  height: 350px;
+  border-radius: 100px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.button-div {
+  /* position: absolute; */
+  bottom: 0px;
+  display: block;
+  right: 0;
+}
+
+.button-div button {
+  border: none;
+  background-color: #fff;
+  color: blue;
+  border-radius: 20px;
+  padding: 20px 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .HeroSection .img-div {
+    /* height: 200px; */
+    /* overflow: scroll; */
+    /* background-image: url("../../assets/images/mobile-hero-image.png"); */
+    background-position: 0 -10px;
+  }
+}
