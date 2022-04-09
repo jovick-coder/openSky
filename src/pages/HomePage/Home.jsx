@@ -50,6 +50,19 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="about-section mt-3">
+          <h3>About the OpenSky Network</h3>
+          The OpenSky Network is a non-profit community-based receiver network
+          which has been continuously collecting air traffic surveillance data
+          since 2013. Unlike other networks, OpenSky keeps the complete
+          unfiltered raw data and makes it accessible to academic and
+          institutional researchers. With over 25 trillion ADS-B, Mode S, TCAS
+          and FLARM messages collected from more than 3500 sensors around the
+          world, the OpenSky Network exhibits the largest air traffic
+          surveillance dataset of its kind. The mission of our non-profit
+          association is to support open global air traffic research by
+          universities and other not-for-profit institutions.
+        </div>
       </div>
     </div>
   );
