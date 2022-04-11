@@ -69,6 +69,9 @@ const Nav = ({ currentPage }) => {
 export default Nav;
 
 export const DashboardNav = ({ currentPage }) => {
+  const handelLogout = () => {
+    window.location.replace("./");
+  };
   return (
     <>
       <nav className="DashboardNav">
@@ -114,7 +117,7 @@ export const DashboardNav = ({ currentPage }) => {
                   }
                   to="/"
                 >
-                  <MdLogout />
+                  <MdLogout onClick={handelLogout()} />
                 </Link>
               </li>
             </ul>
