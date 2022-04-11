@@ -15,7 +15,7 @@ const Nav = ({ currentPage }) => {
   return (
     <>
       {/* Nav */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container flex">
           <Link to={"/"} className="navbar-brand ">
             <BsFillCloudHaze2Fill />
