@@ -117,7 +117,7 @@ export const DashboardNav = ({ currentPage }) => {
                   }
                   to="/"
                 >
-                  <MdLogout onClick={handelLogout()} />
+                  <MdLogout onClick={() => handelLogout()} />
                 </Link>
               </li>
             </ul>
