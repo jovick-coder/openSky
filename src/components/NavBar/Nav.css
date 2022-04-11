@@ -1,29 +1,29 @@
-nav {
+.DashboardNav {
   background-color: var(--bs-light);
   /* display: flex;
   justify-content: space-between; */
   height: 50px;
   width: 100%;
 }
-nav .logo {
+.DashboardNav .logo {
   /* border: solid; */
   width: 150px;
 }
-nav .logo,
-nav ul {
+.DashboardNav .logo,
+.DashboardNav ul {
   margin: auto 15px;
 }
-nav ul {
+.DashboardNav ul {
   display: flex;
   padding: 0;
   list-style: none;
 }
 
-nav ul li {
+.DashboardNav ul li {
   padding: 0 10px;
   margin: auto 0;
 }
-nav ul li .nav-link {
+.DashboardNav ul li .nav-link {
   padding: 0 0px;
 }
 
