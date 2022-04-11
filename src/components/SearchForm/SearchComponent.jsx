@@ -16,6 +16,7 @@ function SearchComponent({}) {
   const [departure, setDeparture] = useState({ loading: true, data: [] });
   const [arriving, setArriving] = useState({ loading: true, data: [] });
   const [searchInput, setSearchInput] = useState("");
+  const [error, setError] = useState({ error: false, message: "" });
 
   const url = `https://${Private_Data.key}@opensky-network.org/api`;
 
@@ -38,8 +39,15 @@ function SearchComponent({}) {
       setArriving({ loading: false, data: [] });
     }, 3000);
   }, [airport]);
-
+  useEffect(() => {
+    setInterval(() => setError({ error: false, message: "" }), 4000);
+  }, [error]);
   const handelSearch = () => {
+    if (searchInput === "") {
+      setError({ error: true, message: "Search input Empty" });
+      return;
+    }
+
     setAirport(searchInput);
     setStates({ loading: true, data: [] });
     setDeparture({ loading: true, data: [] });
@@ -122,6 +130,7 @@ function SearchComponent({}) {
             </button>
           </div>
         </div>
+        {error.error ? <div className="text-end">{error.message}</div> : null}
       </div>
       <div className="row">
         <div className="col-md-4">
