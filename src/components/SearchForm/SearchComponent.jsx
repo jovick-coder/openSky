@@ -10,7 +10,7 @@ import { Private_Data } from "../../private/private";
 import LoadingComponent from "../Loading/LoadingComponent";
 import "./SearchComponent.css";
 function SearchComponent({}) {
-  const [airport, setAirport] = useState("EDDF");
+  const [airport, setAirport] = useState("KEDC");
 
   const [states, setStates] = useState({ loading: true, data: [] });
   const [departure, setDeparture] = useState({ loading: true, data: [] });
