@@ -71,7 +71,7 @@ export default Nav;
 export const DashboardNav = ({ currentPage }) => {
   return (
     <>
-      <nav>
+      <nav className="DashboardNav">
         <div className="container">
           <div className="d-inline-flex w-100 my-2 justify-content-between">
             <div className="logo ">
