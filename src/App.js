@@ -10,6 +10,7 @@ function App() {
   const [theme, setTheme] = useState("light");
   return (
     <div data-theme={theme}>
+      {/* Render theme toggler */}
       <ThemeTogglerComponent theme={theme} setTheme={setTheme} />
       <Router>
         <Routes>

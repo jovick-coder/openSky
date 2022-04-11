@@ -4,6 +4,7 @@ import "./ThemeTogglerComponent.css";
 
 function ThemeTogglerComponent({ theme, setTheme }) {
   const switchMode = () => {
+    // check current theme and change to the opposite
     if (theme === "dark") {
       setTheme("light");
       return;
@@ -18,6 +19,7 @@ function ThemeTogglerComponent({ theme, setTheme }) {
           switchMode();
         }}
       >
+        {/* render icon base on the current theme state */}
         {theme === "dark" ? <BsFillSunFill /> : <BsFillMoonFill />}
       </button>
     </>

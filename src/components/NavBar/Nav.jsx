@@ -8,7 +8,7 @@ import {
   BsFillHouseFill,
   BsFillDoorClosedFill,
 } from "react-icons/bs";
-import { MdFlight, MdLogout } from "react-icons/md";
+import { MdLogout } from "react-icons/md";
 import { AiFillDashboard } from "react-icons/ai";
 
 const Nav = ({ currentPage }) => {
@@ -39,6 +39,7 @@ const Nav = ({ currentPage }) => {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link
+                  // if current page is home page give it a class of active
                   className={
                     currentPage === "home" ? "nav-link active " : "nav-link "
                   }
@@ -49,6 +50,8 @@ const Nav = ({ currentPage }) => {
               </li>
               <li className="nav-item">
                 <Link
+                  // if current login is home page give it a class of active
+
                   className={
                     currentPage === "login" ? "nav-link active " : "nav-link "
                   }
@@ -105,6 +108,7 @@ export const DashboardNav = ({ currentPage }) => {
                   }
                   to="/"
                 >
+                  {/* on click logout */}
                   <MdLogout onClick={() => handelLogout()} />
                 </Link>
               </li>

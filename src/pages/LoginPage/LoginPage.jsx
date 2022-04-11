@@ -6,8 +6,10 @@ import "./LoginPage.css";
 const LoginPage = () => {
   return (
     <div className="LoginPage">
+      {/* render nav setting the current page to login  */}
       <Nav currentPage="login" />
       <div className="form-card">
+        {/* render login form */}
         <LoginFormComponent />
       </div>
     </div>
