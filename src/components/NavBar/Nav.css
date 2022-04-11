@@ -2,8 +2,7 @@ nav.navbar {
   background-color: var(--background-primary);
   color: red;
 }
-.navbar-toggler {
-  /* border: solid !important; */
+/* .navbar-toggler {
   position: relative;
   height: 30px;
   width: 20px;
@@ -33,16 +32,13 @@ nav.navbar {
   background-color: black;
   left: 2px;
   top: 5px;
-}
+} */
 .DashboardNav {
   background-color: var(--background-primary);
-  /* display: flex;
-  justify-content: space-between; */
   height: 50px;
   width: 100%;
 }
 .DashboardNav .logo {
-  /* border: solid; */
   width: 150px;
 }
 .DashboardNav .logo,

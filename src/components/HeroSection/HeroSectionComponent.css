@@ -1,7 +1,5 @@
 .HeroSection {
   position: relative;
-
-  /* background: ; */
 }
 .HeroSection .overlay {
   position: absolute;
@@ -17,7 +15,6 @@
 }
 .HeroSection .img-div img {
   width: 100%;
-  /* display: none; */
   min-width: 500px;
   max-height: 550px;
 
@@ -42,7 +39,6 @@
   right: 0;
 }
 .button-div {
-  /* position: absolute; */
   bottom: 0px;
   display: block;
   right: 0;
@@ -58,9 +54,6 @@
 
 @media screen and (max-width: 768px) {
   .HeroSection .img-div {
-    /* height: 200px; */
-    /* overflow: scroll; */
-    /* background-image: url("../../assets/images/mobile-hero-image.png"); */
     background-position: 0 -10px;
   }
 }

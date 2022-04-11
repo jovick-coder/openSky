@@ -53,7 +53,6 @@ const LoginFormComponent = () => {
           />
         </div>
 
-        {/* <!-- Password input --> */}
         <div className="form-outline mb-4">
           <label className="form-label" htmlFor="form2Example2">
             Password

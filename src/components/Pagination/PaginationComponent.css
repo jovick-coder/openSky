@@ -46,8 +46,6 @@
 @media screen and (max-width: 767px) {
   .PaginationComponent .select-div {
     margin: 0 auto;
-    /* width: 500px;
-    max-width: 400px; */
   }
   .PaginationComponent ul {
     margin: 0 auto;

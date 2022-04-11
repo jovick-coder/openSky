@@ -6,7 +6,6 @@
 .HomePage .top-cards .card {
   height: 200px;
   padding: 10px;
-  /* background-color: rgba(255, 255, 255, 0.5); */
 }
 .HomePage .top-cards .card b {
   font-weight: 900;
@@ -14,5 +13,4 @@
 }
 .HomePage .card {
   background-color: var(--background-primary);
-  /* color: var(--text-primary); */
 }

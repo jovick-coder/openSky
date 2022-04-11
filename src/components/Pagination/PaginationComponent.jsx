@@ -63,13 +63,7 @@ function PaginationComponent({
         <li onClick={() => handelNextBtn()} className="btn">
           ...
         </li>
-        <li
-          className="btn"
-          onClick={() => {
-            // setCurrentPage(pages.length);
-          }}
-          title="Total page"
-        >
+        <li className="btn" title="Total page">
           {pages.length - 1}
         </li>
       </>
