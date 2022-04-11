@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "../../components/HeroSection/HeroSection";
+import HeroSectionComponent from "../../components/HeroSection/HeroSectionComponent";
 import Nav from "../../components/NavBar/Nav";
 import "./HomePage.css";
 import logo from "../../assets/opensky_logo.png";
@@ -10,7 +10,7 @@ const Home = () => {
     <div className="HomePage">
       <Nav currentPage="home" />
 
-      <HeroSection />
+      <HeroSectionComponent />
 
       <div className="container mt-4">
         <h1 className="text-center ">OpenSky Network provides you with</h1>
