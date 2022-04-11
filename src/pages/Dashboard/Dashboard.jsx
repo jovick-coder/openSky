@@ -16,7 +16,7 @@ function Dashboard() {
 
   useEffect(() => {
     getFlights();
-  }, []);
+  }, [getFlights]);
 
   async function getFlights() {
     // data for the current timestamp returns null

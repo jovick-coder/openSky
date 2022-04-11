@@ -9,7 +9,7 @@ import {
 import { Private_Data } from "../../private/private";
 import LoadingComponent from "../Loading/LoadingComponent";
 import "./SearchComponent.css";
-function SearchComponent({}) {
+function SearchComponent() {
   const [airport, setAirport] = useState("KEDC");
 
   const [states, setStates] = useState({ loading: true, data: [] });
@@ -53,6 +53,7 @@ function SearchComponent({}) {
     setDeparture({ loading: true, data: [] });
     setArriving({ loading: true, data: [] });
   };
+  // getStates function
 
   async function getStates() {
     try {
@@ -70,7 +71,7 @@ function SearchComponent({}) {
       console.error(err);
     }
   }
-
+  // getDeparture function
   async function getDeparture() {
     try {
       let response = await axios({
@@ -87,6 +88,8 @@ function SearchComponent({}) {
       console.error(err);
     }
   }
+  // getArriving function
+
   async function getArriving() {
     try {
       let response = await axios({
@@ -122,6 +125,7 @@ function SearchComponent({}) {
               }}
               placeholder="Search via airport"
             />
+            {/* search button */}
             <button
               className="btn btn-primary rounded-0"
               onClick={() => handelSearch()}

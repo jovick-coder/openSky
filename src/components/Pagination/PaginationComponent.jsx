@@ -9,7 +9,7 @@ function PaginationComponent({
   setCurrentPage,
   setItemPerPage,
 }) {
-  const [pageNumberLimit, setPageNumberLimit] = useState(3);
+  const [pageNumberLimit] = useState(3);
   const [maxPageNumberLimit, setMaxPageNumberLimit] = useState(3);
   const [minPageNumberLimit, setMinPageNumberLimit] = useState(0);
 
