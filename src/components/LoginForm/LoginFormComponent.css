@@ -1,0 +1,17 @@
+.LoginForm {
+  color: #ddd;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.LoginForm {
+  border: solid;
+  padding: 40px 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  background-color: rgba(95, 95, 95, 0.5);
+  margin: auto;
+  /* height: 100vh; */
+}

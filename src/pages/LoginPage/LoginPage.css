@@ -1,0 +1,10 @@
+.LoginPage {
+  background-color: rgb(36, 36, 36);
+  width: 100vw;
+  height: 100vh;
+}
+.LoginPage .form-card {
+  padding: 0 10px;
+  height: 90vh;
+  display: flex;
+}

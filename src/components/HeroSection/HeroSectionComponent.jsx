@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import desktopHeroImage from "../../assets/images/airplan1.jpg";
-import "./HeroSection.css";
+import "./HeroSectionComponent.css";
 
-const HeroSection = () => {
+const HeroSectionComponent = () => {
   return (
     <>
       <div className="HeroSection">
@@ -25,4 +25,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HeroSectionComponent;
