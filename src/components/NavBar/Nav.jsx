@@ -105,18 +105,6 @@ export const DashboardNav = ({ currentPage }) => {
                   }
                   to="/"
                 >
-                  <MdFlight />
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className={
-                    currentPage === "Dashboard"
-                      ? "nav-link active"
-                      : "nav-link "
-                  }
-                  to="/"
-                >
                   <MdLogout onClick={() => handelLogout()} />
                 </Link>
               </li>
