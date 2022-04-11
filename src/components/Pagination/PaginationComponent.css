@@ -15,15 +15,16 @@
 .PaginationComponent ul li {
   padding: 3px 5px;
   cursor: pointer;
+  color: var(--text-primary);
 }
 .PaginationComponent ul li.btn:hover {
   background-color: #0d6dfd8e;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 .PaginationComponent ul li.btn:focus,
 .PaginationComponent ul li.btn:active {
   background-color: #0d6dfd8e;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 .PaginationComponent .btn {
   border-radius: 0;

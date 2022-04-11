@@ -1,6 +1,6 @@
 .HomePage {
-  background-color: rgb(36, 36, 36);
-  color: #ddd;
+  background-color: var(--background);
+  color: var(--text-primary);
 }
 
 .HomePage .top-cards .card {
@@ -13,6 +13,6 @@
   text-decoration: underline;
 }
 .HomePage .card {
-  background-color: rgba(95, 95, 95, 0.5);
-  color: #ddd;
+  background-color: var(--background-primary);
+  /* color: var(--text-primary); */
 }

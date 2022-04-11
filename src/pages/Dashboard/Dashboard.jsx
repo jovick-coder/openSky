@@ -7,6 +7,7 @@ import MapFlightsComponents from "../../components/MapFlights/MapFlightsComponen
 import SearchComponent from "../../components/SearchForm/SearchComponent";
 
 import { Private_Data } from "../../private/private";
+import "./Dashboard.css";
 
 function Dashboard() {
   const [allFlights, setAllFlights] = useState({ loading: true, data: [] });
@@ -39,7 +40,7 @@ function Dashboard() {
   }
 
   return (
-    <>
+    <div className="Dashboard ">
       <DashboardNav currentPage="Dashboard" />
       <div className="container">
         <div className="row">
@@ -62,7 +63,7 @@ function Dashboard() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -22,14 +22,14 @@ function MapFlightsComponents({ allFlights }) {
   const currentItems = allFlights.data.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
-    <>
+    <div className="MapFlightsComponents">
       {allFlights.loading ? (
         <LoadingComponent />
       ) : (
         <>
           <div className="table-responsive">
             <table className="table">
-              <thead className="table-dark">
+              <thead className="">
                 <tr>
                   <th scope="col">#</th>
                   <th scope="col">icao24 address </th>
@@ -99,7 +99,7 @@ function MapFlightsComponents({ allFlights }) {
         setCurrentPage={setCurrentPage}
         setItemPerPage={setItemPerPage}
       />
-    </>
+    </div>
   );
 }
 

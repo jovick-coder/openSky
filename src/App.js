@@ -3,10 +3,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/HomePage/Home";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import { useState } from "react";
+import ThemeTogglerComponent from "./components/ThemeToggle/ThemeTogglerComponent";
 
 function App() {
+  const [theme, setTheme] = useState("light");
   return (
-    <>
+    <div data-theme={theme}>
+      <ThemeTogglerComponent theme={theme} setTheme={setTheme} />
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -14,7 +18,7 @@ function App() {
           <Route exact path="/dashboard" element={<Dashboard />} />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 

@@ -1,5 +1,41 @@
+nav.navbar {
+  background-color: var(--background-primary);
+  color: red;
+}
+.navbar-toggler {
+  /* border: solid !important; */
+  position: relative;
+  height: 30px;
+  width: 20px;
+  padding: 10px;
+}
+.navbar-toggler .navbar-toggler-icon {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: black;
+  left: 2px;
+}
+.navbar-toggler .navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: black;
+  left: 2px;
+  top: -5px;
+}
+.navbar-toggler .navbar-toggler-icon::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: black;
+  left: 2px;
+  top: 5px;
+}
 .DashboardNav {
-  background-color: var(--bs-light);
+  background-color: var(--background-primary);
   /* display: flex;
   justify-content: space-between; */
   height: 50px;
