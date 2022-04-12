@@ -1,6 +1,6 @@
 :root {
   --background: white;
-  --background-primary: #ddd;
+  --background-primary: rgba(221, 221, 221, 0.5);
   --text-primary: #2b2b2b;
   /* --accent: purple; */
 }

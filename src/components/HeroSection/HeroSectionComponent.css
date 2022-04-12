@@ -22,8 +22,8 @@
 }
 
 .text-div {
-  background-color: rgba(107, 107, 107, 0.5);
-  color: #ddd;
+  background-color: var(--background-primary);
+  color: var(--text-primary);
   width: 100%;
   max-width: 700px;
   z-index: 2;
@@ -46,8 +46,8 @@
 
 .button-div button {
   border: none;
-  background-color: #fff;
-  color: blue;
+  background-color: var(--background);
+  color: var(--text-primary);
   border-radius: 20px;
   padding: 20px 30px;
 }
@@ -55,5 +55,15 @@
 @media screen and (max-width: 768px) {
   .HeroSection .img-div {
     background-position: 0 -10px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .text-div {
+    height: 320px;
+  }
+
+  .button-div button {
+    border-radius: 30px;
+    padding: 15px 20px;
   }
 }
