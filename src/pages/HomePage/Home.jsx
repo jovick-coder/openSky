@@ -71,33 +71,37 @@ const Home = () => {
               institutions.
             </div>
           </div>
-          <div className="col-md-3 card">
-            <h3>Special Links</h3>
-            <ul>
-              <li>
-                OpenSky official website{" "}
-                <a href="https://opensky-network.org/">Open</a>{" "}
-              </li>
-              <li>
-                About openSky{" "}
-                <a href="https://opensky-network.org/about/about-us">Open</a>{" "}
-              </li>
-              <li>
-                {" "}
-                visit open network blogs{" "}
-                <a href="https://opensky-network.org/community/blog/">
-                  Open
-                </a>{" "}
-              </li>
-              <li>
-                OpenSky API docs{" "}
-                <a href="https://openskynetwork.github.io/opensky-api/">Open</a>
-              </li>
-              <li>
-                openSky twitter{" "}
-                <a href="https://twitter.com/OpenSkyNetwork">open</a>
-              </li>
-            </ul>
+          <div className="col-md-3">
+            <div className="card mt-3">
+              <h3>Special Links</h3>
+              <ul>
+                <li>
+                  OpenSky official website{" "}
+                  <a href="https://opensky-network.org/">Open</a>{" "}
+                </li>
+                <li>
+                  About openSky{" "}
+                  <a href="https://opensky-network.org/about/about-us">Open</a>{" "}
+                </li>
+                <li>
+                  {" "}
+                  visit open network blogs{" "}
+                  <a href="https://opensky-network.org/community/blog/">
+                    Open
+                  </a>{" "}
+                </li>
+                <li>
+                  OpenSky API docs{" "}
+                  <a href="https://openskynetwork.github.io/opensky-api/">
+                    Open
+                  </a>
+                </li>
+                <li>
+                  openSky twitter{" "}
+                  <a href="https://twitter.com/OpenSkyNetwork">open</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="card m-3 p-3">
