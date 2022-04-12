@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./LoginFormComponent.css";
 
 const LoginFormComponent = () => {
@@ -8,8 +9,10 @@ const LoginFormComponent = () => {
     error: false,
     message: "",
   });
+  const navigate = useNavigate();
 
-  const handelSubmit = () => {
+  const handelSubmit = (e) => {
+    e.preventDefault();
     // on submit validate the input
     if (email === "") {
       setError({ error: true, message: "email can not be empty" });
@@ -28,13 +31,13 @@ const LoginFormComponent = () => {
       message: "",
     });
     console.log("handelSubmit", email, password);
-    window.location.replace("./dashboard");
+    navigate("/dashboard");
   };
 
   return (
     <div className="LoginForm">
       <h1 className="text-center mb-3">Login Form</h1>
-      <form>
+      <form onSubmit={(e) => handelSubmit(e)}>
         {error.error ? (
           <div className="alert alert-danger">{error.message}</div>
         ) : null}
@@ -69,9 +72,9 @@ const LoginFormComponent = () => {
 
         <div className="text-center">
           <button
-            type="button"
+            type="submit"
             className="btn btn-primary btn-block mb-4"
-            onClick={() => handelSubmit()}
+            // onClick={() => handelSubmit()}
           >
             Sign in
           </button>

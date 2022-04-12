@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import { Navbar, NavDropdown } from "react-bootstrap";
 // import logo from "../../assets/opensky_logo.png";
@@ -10,6 +10,7 @@ import {
 } from "react-icons/bs";
 import { MdLogout } from "react-icons/md";
 import { AiFillDashboard } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 const Nav = ({ currentPage }) => {
   return (
@@ -72,9 +73,12 @@ const Nav = ({ currentPage }) => {
 export default Nav;
 
 export const DashboardNav = ({ currentPage }) => {
+  const navigate = useNavigate();
+
   const handelLogout = () => {
-    window.location.replace("./");
+    window.confirm("Logout?") && navigate("/");
   };
+
   return (
     <>
       <nav className="DashboardNav">
@@ -94,23 +98,13 @@ export const DashboardNav = ({ currentPage }) => {
                       ? "nav-link active"
                       : "nav-link "
                   }
-                  to="/"
+                  to="/dashboard"
                 >
                   <AiFillDashboard />
                 </Link>
               </li>
               <li>
-                <Link
-                  className={
-                    currentPage === "Dashboard"
-                      ? "nav-link active"
-                      : "nav-link "
-                  }
-                  to="/"
-                >
-                  {/* on click logout */}
-                  <MdLogout onClick={() => handelLogout()} />
-                </Link>
+                <MdLogout onClick={() => handelLogout()} />
               </li>
             </ul>
           </div>
